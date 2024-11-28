@@ -11,8 +11,7 @@
 
 <picture> <img align="right" src="https://imgcdn.sigstick.com/Knb758D6t73QLBn1ysMk/0.png" width = 250px></picture>
 
-<br>
-
+#### My name is Luma Araújo
 #### Currently studying Computer Science at the UFCA 
 #### Hobbies: Reading, Singing, Learning new languages, Watching K-dramas, Drawing, Playing Video Games, Programming... A bit of everything!
 #### Ocuppation: Chorona
@@ -23,8 +22,7 @@
   </tr>
 </table>
 
-
-<br><br>
+<br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
