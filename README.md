@@ -7,7 +7,7 @@
 
 ![Cute_Gif_382ca4e7fb](https://github.com/user-attachments/assets/068e991f-81e5-4baa-ae41-e709a6bf312f)
 
-# **About me** 
+# 😋 **About me** 
 
 <picture> <img align="right" src="https://imgcdn.sigstick.com/Knb758D6t73QLBn1ysMk/0.png" width = 250px></picture>
 
