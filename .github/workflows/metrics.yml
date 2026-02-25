@@ -1,0 +1,108 @@
+name: GitHub Metrics
+
+on:
+  # 🌏 Atualiza automaticamente todo dia às 6h UTC
+  schedule:
+    - cron: "0 6 * * *"
+  # 💡 Permite executar manualmente pela aba Actions
+  workflow_dispatch:
+  # 🚀 Executa também quando houver push na branch main
+  push:
+    branches:
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # Token com as permissões necessárias (criado no Passo 2)
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Token para fazer o commit da imagem gerada
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Nome do usuário/organização alvo
+          user: Sahinake
+          
+          # Nome do arquivo SVG que será gerado
+          filename: assets/metrics.svg
+          
+          # Elementos base a serem incluídos
+          base: header, activity, community, repositories, metadata
+          
+          # 🕒 Configuração de timezone
+          config_timezone: America/Sao_Paulo
+          
+          # 💖 Tema rosa (usando o tema 'radical' como base)
+          config_order: base.header, languages, habits, followup, lines, activity, community, repositories
+          
+          # 🌸 PLUGINS COM CORES ROSA PERSONALIZADAS
+          
+          # Plugin de linguagens
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css
+          plugin_languages_colors: github
+          plugin_languages_threshold: 1%
+          
+          # Plugin de linhas de código
+          plugin_lines: yes
+          
+          # Plugin de hábitos
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          
+          # Plugin de follow-up (contribuições em repositórios)
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+          
+          # Plugin de atividades recentes
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_visibility: all
+          plugin_activity_timestamps: yes
+          
+          # Plugin de pessoas (seguidores/seguindo)
+          plugin_people: yes
+          plugin_people_limit: 10
+          plugin_people_size: 28
+          plugin_people_types: followers, following
+          
+          # 🎨 CSS personalizado para forçar o rosa
+          extras_css: |
+            /* Forçando o tema rosa */
+            :root {
+              --color-calendar-graph-day-L1-bg: #ffe4f2;
+              --color-calendar-graph-day-L2-bg: #ffb3d9;
+              --color-calendar-graph-day-L3-bg: #ff80b3;
+              --color-calendar-graph-day-L4-bg: #ff4d94;
+            }
+            
+            /* Estilizando títulos e textos */
+            h1, h2, h3 {
+              color: #ff69b4 !important;
+            }
+            
+            /* Links e números */
+            a, .number {
+              color: #ff1493 !important;
+            }
+            
+            /* Fundo dos cards */
+            .field {
+              background: rgba(255, 105, 180, 0.1) !important;
+            }
+            
+            /* Bordas */
+            .card {
+              border-color: #ffb6c1 !important;
+            }
