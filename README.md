@@ -1,67 +1,102 @@
+<h1 align="center"> 
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi,+I'm+Sahinake!+👋;+Luma+Araújo+✧;+Code+%7C+Create+%7C+Repeat;" /> 
+</h1>
 
-<h1 align="center"><b>Hi , I'm Sahinake </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-<br>
-<p align="center"><b>"Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor." <br> ROMANOS 6:23</b></p>
-<br>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<p align="center"> 
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> 
+  <br> 
+  <b>Computer Science Student @ UFCA • Brazil</b> <br> 
+  <i>"Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor."</i> <br> <b>Romanos 6:23</b> 
+</p>
 
+<p align="center"> 
+  <img src="https://komarev.com/ghpvc/?username=Sahinake&color=ff69b4&style=flat-square&label=🌸+Visitors" alt="Profile views"/> 
+</p>
+
+---
 ![Cute_Gif_382ca4e7fb](https://github.com/user-attachments/assets/068e991f-81e5-4baa-ae41-e709a6bf312f)
 
-# 😋 **About me** 
-
-<picture> <img align="right" src="https://imgcdn.sigstick.com/Knb758D6t73QLBn1ysMk/0.png" width = 250px></picture>
-
-#### My name is Luma Araújo
-#### Currently studying Computer Science at the UFCA 
-#### Hobbies: Reading, Singing, Learning new languages, Watching K-dramas, Drawing, Playing Video Games, Programming... A bit of everything!
-#### Ocuppation: Chorona
-#### <table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/b8227ce9-143f-488f-91c8-7e1fb540481c" alt="images" width="30px"></td>
-    <td style="vertical-align: middle;"> <a href="https://mydramalist.com/profile/Malu_1992">Maluzinha</td>
-  </tr>
-</table>
-
 <br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
+## 💫 About Me
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Skills</b>
-<br>
+```javascript
+const luma = {
+  role: "Computer Science Student",
+  location: "Brazil 🇧🇷",
+  passions: [
+    "Game Development 🎮",
+    "Web Development 🌐",
+    "UI/UX Design 🎨",
+    "Creative Coding 🧩",
+    "Software Dev ⚙️"
+  ],
+  currentFocus: "Turning ideas into interactive experiences",
+  funFact: "I debug with music and tears 🎵😭"
+};
+```
+
+---
+
+## 🌸 Passions & Vibes
+
+> 📚 Reading · 🎤 Singing · 🌎 Languages · 🎬 K-dramas · 🎮 Gaming · 🎨 Drawing · 💻 Coding
+
+---
+
+## 🚀 Tech Stack
+
+### 🧩 Languages
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
+### 🌐 Front-End
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### 🎨 Design Tools
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+### 🛠 Tools & Environment
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img src="assets/metrics.svg" width="100%">
+</div>
+
+---
+
+## ✨ Motto
+
+> _"Code with logic. Create with passion."_
+
+---
 
 <p align="center">
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <br>
+  <b>Thanks for stopping by! 🌸</b>
+</p>
 
-- **Languages**:
-    
-    ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-    ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-    ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+---
 
-<br>   
-    
-- **Front-End Development**:
-
-   ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-   ![CSS3](https://img.shields.io/badge/CSS%20-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-   ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23E34F26.svg?style=for-the-badge&logo=javascript&logoColor=black)
-    
-<br>
-
-- **Design**:
-  
-    ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
-    ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-<br>
-
-- **Softwares and Tools**:
-
-    ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-    ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-    ![Google](https://img.shields.io/badge/google-%234285F4.svg?style=for-the-badge&logo=google&logoColor=white)
-    ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-    ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) 
-
-<br>
-
-<br>
+<p align="center">
+  <a href="https://www.linkedin.com/in/luma-oliveira-271ab73a7/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:lumaluiza1992@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+  </a>
+</p>
