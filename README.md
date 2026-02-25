@@ -71,7 +71,7 @@ const luma = {
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="assets/metrics.svg" width="100%">
+  <img src="assets/metrics.svg" width="100%" alt="GitHub Metrics">
 </div>
 
 ---
