@@ -19,13 +19,13 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token com as permissões necessárias
+          # Token com as permissões necessárias (criado no Passo 2)
           token: ${{ secrets.METRICS_TOKEN }}
           
           # Token para fazer o commit da imagem gerada
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           
-          # Nome do usuário
+          # Nome do usuário/organização alvo
           user: Sahinake
           
           # Nome do arquivo SVG que será gerado
@@ -37,227 +37,66 @@ jobs:
           # 🕒 Configuração de timezone
           config_timezone: America/Sao_Paulo
           
-          # 📊 Ordem dos elementos (removido people)
-          config_order: base.header, languages, habits, followup, lines, activity, repositories
+          # 💖 Tema rosa (usando o tema 'radical' como base)
+          config_order: base.header, languages, habits, followup, lines, activity, community, repositories
           
-          # 🎨 TEMA ROSA COMPLETO
-          config_display: large
+          # 🌸 PLUGINS COM CORES ROSA PERSONALIZADAS
           
-          # ✨ PLUGINS PRINCIPAIS
-          
-          # Plugin de linguagens (melhorado)
+          # Plugin de linguagens
           plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
           plugin_languages_ignored: html, css
           plugin_languages_colors: github
           plugin_languages_threshold: 1%
-          plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
-          plugin_languages_recent_days: 365
           
           # Plugin de linhas de código
           plugin_lines: yes
-          plugin_lines_history: yes
           
-          # Plugin de hábitos (melhorado)
+          # Plugin de hábitos
           plugin_habits: yes
           plugin_habits_from: 200
-          plugin_habits_days: 30
+          plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          plugin_habits_weekly: yes
           
-          # Plugin de follow-up (contribuições)
+          # Plugin de follow-up (contribuições em repositórios)
           plugin_followup: yes
-          plugin_followup_sections: repositories
+          plugin_followup_sections: repositories, user
           
-          # Plugin de atividades recentes (melhorado)
+          # Plugin de atividades recentes
           plugin_activity: yes
-          plugin_activity_limit: 8
+          plugin_activity_limit: 5
           plugin_activity_days: 14
           plugin_activity_visibility: all
           plugin_activity_timestamps: yes
-          plugin_activity_filter: pr, issue, review
           
-          # 📈 GRÁFICOS E VISUAIS ADICIONAIS
-          
-          # Calendário de contribuições (opcional, descomente se quiser)
-          # plugin_isocalendar: yes
-          # plugin_isocalendar_duration: full-year
-          
-          # Estrelas dos repositórios (opcional)
-          # plugin_stars: yes
-          # plugin_stars_limit: 4
-          
-          # Tópicos mais usados (opcional)
-          # plugin_topics: yes
-          # plugin_topics_limit: 8
-          # plugin_topics_mode: icons
-          
-          # 🎨 CSS PERSONALIZADO AVANÇADO - MAIS BONITO
+          # 🎨 CSS personalizado para forçar o rosa
           extras_css: |
-            /* ===== TEMA ROSA PREMIUM ===== */
-            
-            /* Variáveis de cores */
+            /* Forçando o tema rosa */
             :root {
-              --pink-primary: #ff69b4;
-              --pink-dark: #ff1493;
-              --pink-light: #ffb6c1;
-              --pink-soft: #ffe4f2;
-              --pink-gradient: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 50%, #ff1493 100%);
-              --bg-dark: #1a0f1a;
+              --color-calendar-graph-day-L1-bg: #ffe4f2;
+              --color-calendar-graph-day-L2-bg: #ffb3d9;
+              --color-calendar-graph-day-L3-bg: #ff80b3;
+              --color-calendar-graph-day-L4-bg: #ff4d94;
             }
             
-            /* Fundo geral */
-            body {
-              background-color: var(--bg-dark) !important;
-              font-family: 'Segoe UI', 'Helvetica Neue', sans-serif !important;
+            /* Estilizando títulos e textos */
+            h1, h2, h3 {
+              color: #ff69b4 !important;
             }
             
-            /* Container principal */
-            .container {
-              border-radius: 24px !important;
-              overflow: hidden !important;
-              box-shadow: 0 20px 40px rgba(255, 20, 147, 0.3) !important;
-              border: 2px solid var(--pink-light) !important;
+            /* Links e números */
+            a, .number {
+              color: #ff1493 !important;
             }
             
-            /* Cabeçalho */
-            .header {
-              background: var(--pink-gradient) !important;
-              padding: 20px !important;
-            }
-            
-            .header h1, .header h2, .header h3 {
-              color: white !important;
-              text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
-            }
-            
-            /* Cards */
-            .card {
-              background: linear-gradient(145deg, #2a1a2a 0%, #1f141f 100%) !important;
-              border: 2px solid var(--pink-light) !important;
-              border-radius: 20px !important;
-              margin: 15px !important;
-              box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2) !important;
-              transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-            }
-            
-            .card:hover {
-              transform: translateY(-5px) !important;
-              box-shadow: 0 15px 30px rgba(255, 20, 147, 0.4) !important;
-            }
-            
-            /* Títulos dos cards */
-            .card h1, .card h2, .card h3 {
-              background: var(--pink-gradient) !important;
-              -webkit-background-clip: text !important;
-              -webkit-text-fill-color: transparent !important;
-              background-clip: text !important;
-              font-weight: 600 !important;
-              letter-spacing: 0.5px !important;
-            }
-            
-            /* Números e estatísticas */
-            .number {
-              background: var(--pink-gradient) !important;
-              -webkit-background-clip: text !important;
-              -webkit-text-fill-color: transparent !important;
-              background-clip: text !important;
-              font-size: 1.4em !important;
-              font-weight: 700 !important;
-            }
-            
-            /* Links */
-            a {
-              color: var(--pink-primary) !important;
-              text-decoration: none !important;
-              font-weight: 500 !important;
-              transition: color 0.2s ease !important;
-            }
-            
-            a:hover {
-              color: var(--pink-dark) !important;
-              text-decoration: underline wavy var(--pink-light) !important;
-            }
-            
-            /* Barras de progresso */
-            .progress-bar {
-              background: linear-gradient(90deg, var(--pink-light), var(--pink-primary), var(--pink-dark)) !important;
-              border-radius: 10px !important;
-              height: 12px !important;
-              box-shadow: 0 2px 4px rgba(255, 105, 180, 0.3) !important;
-            }
-            
-            /* Gráfico de contribuições */
-            :root {
-              --color-calendar-graph-day-bg: #2d1a2d !important;
-              --color-calendar-graph-day-L1-bg: #ffe4f2 !important;
-              --color-calendar-graph-day-L2-bg: #ffb3d9 !important;
-              --color-calendar-graph-day-L3-bg: #ff80b3 !important;
-              --color-calendar-graph-day-L4-bg: #ff4d94 !important;
-            }
-            
-            /* Ícones */
-            .icon {
-              filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.5)) !important;
-            }
-            
-            /* Campos e inputs */
+            /* Fundo dos cards */
             .field {
-              background: rgba(255, 105, 180, 0.15) !important;
-              border-radius: 12px !important;
-              padding: 10px !important;
-              border: 1px solid var(--pink-light) !important;
+              background: rgba(255, 105, 180, 0.1) !important;
             }
             
-            /* Separadores */
-            hr {
-              border: none !important;
-              height: 2px !important;
-              background: var(--pink-gradient) !important;
-              margin: 20px 0 !important;
-            }
-            
-            /* Listas */
-            ul {
-              list-style-type: none !important;
-            }
-            
-            ul li::before {
-              content: "🌸 " !important;
-              color: var(--pink-primary) !important;
-              font-size: 1.2em !important;
-            }
-            
-            /* Badges e tags */
-            .badge {
-              background: linear-gradient(135deg, #ffb6c1, #ff69b4) !important;
-              color: white !important;
-              border-radius: 50px !important;
-              padding: 4px 12px !important;
-              font-size: 0.9em !important;
-              font-weight: 500 !important;
-              box-shadow: 0 2px 5px rgba(255, 105, 180, 0.3) !important;
-            }
-            
-            /* Rodapé */
-            .footer {
-              background: var(--pink-gradient) !important;
-              color: white !important;
-              padding: 15px !important;
-              text-align: center !important;
-              border-radius: 0 0 24px 24px !important;
-            }
-            
-            /* Animações suaves */
-            @keyframes pulse {
-              0% { transform: scale(1); }
-              50% { transform: scale(1.02); }
-              100% { transform: scale(1); }
-            }
-            
-            .card:first-child {
-              animation: pulse 3s infinite ease !important;
+            /* Bordas */
+            .card {
+              border-color: #ffb6c1 !important;
             }
