@@ -68,14 +68,6 @@ const luma = {
 
 ---
 
-## 📊 GitHub Analytics
-
-<div align="center">
-  <img src="assets/metrics.svg" alt="GitHub Metrics">
-</div>
-
----
-
 ## ✨ Motto
 
 > _"Code with logic. Create with passion."_
