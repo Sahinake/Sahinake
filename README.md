@@ -68,12 +68,6 @@ const luma = {
 
 ---
 
-## ✨ Motto
-
-> _"Code with logic. Create with passion."_
-
----
-
 <p align="center">
   <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <br>
   <b>Thanks for stopping by! 🌸</b>
